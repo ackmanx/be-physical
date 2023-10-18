@@ -1,8 +1,8 @@
 <script>
-    export let name
-    export let reps
-    export let sets
-    export let description
+  export let name
+  export let reps
+  export let sets
+  export let description
 </script>
 
 <style>
@@ -18,12 +18,14 @@
 </style>
 
 <section>
-    <div>
-        <input type="checkbox" />
-    </div>
-    <div>
-        <h2>{name}</h2>
-        <p>{reps} reps, {sets} sets</p>
-        <p>{description}</p>
-    </div>
+  <div>
+    <input type="checkbox" />
+  </div>
+  <div>
+    <h2>{name}</h2>
+    <p>
+      {reps} reps{#if sets}, {sets} sets{/if}
+    </p>
+    <p>{description}</p>
+  </div>
 </section>
