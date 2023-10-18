@@ -3,4 +3,9 @@
   import '$lib/global.css'
 </script>
 
-<slot />
+<style>
+</style>
+
+<main>
+  <slot />
+</main>
