@@ -1,7 +1,12 @@
 <script>
   export let seconds
+  const originalSeconds = seconds
 
   function handleClick() {
+    if (seconds <= 0) {
+      seconds = originalSeconds
+    }
+
     const intervalId = setInterval(() => {
       if (seconds <= 0) {
         clearInterval(intervalId)
