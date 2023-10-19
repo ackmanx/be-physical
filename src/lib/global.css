@@ -1,16 +1,6 @@
-:root {
-  color-scheme: light dark;
-}
-
 body {
   margin: 16px;
-  background-color: var(--color-main-background);
   font-family: 'Open Sans', sans-serif;
-  color: var(--color-text);
-}
-
-body * {
-  box-sizing: border-box;
 }
 
 h1,
@@ -20,19 +10,4 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-a {
-  font-weight: 500;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-accent);
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }
