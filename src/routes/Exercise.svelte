@@ -6,6 +6,12 @@
   export let sets
   export let secondsPerRep
   export let description
+
+  let isDone = false
+
+  function handleMarkDone() {
+    isDone = !isDone
+  }
 </script>
 
 <style>
@@ -15,6 +21,10 @@
     padding: 16px 16px 0 16px;
     background-color: #ececec;
     border-radius: 10px;
+  }
+
+  .is-done {
+    opacity: 0.5;
   }
 
   input {
@@ -32,9 +42,9 @@
   }
 </style>
 
-<section>
+<section class:is-done={isDone}>
   <div>
-    <input type="checkbox" />
+    <input type="checkbox" on:click={handleMarkDone} />
   </div>
   <div class="body">
     <h2>{name}</h2>
