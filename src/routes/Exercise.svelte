@@ -13,7 +13,8 @@
     display: flex;
     margin-bottom: 16px;
     padding: 16px 16px 0 16px;
-    background-color: #333;
+    background-color: #ececec;
+    border-radius: 10px;
   }
 
   input {
