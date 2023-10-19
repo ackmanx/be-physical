@@ -11,7 +11,9 @@
 <style>
   section {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    padding: 16px 16px 0 16px;
+    background-color: #333;
   }
 
   input {
@@ -33,14 +35,14 @@
   <div>
     <input type="checkbox" />
   </div>
-  <div class='body'>
+  <div class="body">
     <h2>{name}</h2>
     <p>
       {reps} reps{#if sets}, {sets} sets{/if}
     </p>
     <p>{description}</p>
   </div>
-  <div class='timer'>
+  <div class="timer">
     <Timer seconds={reps * secondsPerRep} />
   </div>
 </section>
